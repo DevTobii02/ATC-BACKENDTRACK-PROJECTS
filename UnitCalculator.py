@@ -9,7 +9,17 @@ if ChooseConversion == "Temperature".strip().lower():
     TemperatureConversion = ("1. Degree Celcius To Degree Farenheit", "2. Degree Farenheit To Degree Celcius")
     for a in TemperatureConversion:
         print(a) 
-    PickOption = input("Choose From The Above Provided Conversions : ")
+    PickOption = input("Choose From The Above Provided Conversions : ")   
+    if PickOption == "1":
+        temp_celsius = float(input("Enter temperature in Celsius: "))
+        temp_fahrenheit = (temp_celsius * 9/5) + 32
+        print(f"{temp_celsius}°C is equal to {temp_fahrenheit}°F")
+    elif PickOption == "2":
+        temp_fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+        temp_celsius = (temp_fahrenheit - 32) * 5/9
+        print(f"{temp_fahrenheit}°F is equal to {temp_celsius}°C")
+    else:
+        print("Invalid option selected.")
     if PickOption == "A".lower().strip():
         print(PickOption)     
 elif ChooseConversion == "Distance".strip().lower():
