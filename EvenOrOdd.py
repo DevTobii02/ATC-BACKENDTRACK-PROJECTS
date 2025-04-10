@@ -3,4 +3,5 @@ NumberReceived = float(input("Enter A Number : "))
 if NumberReceived // 2 == 0:
     print("You entered an even number")
 else:
-    print("You entered an odd number")
+    print("You entered an odd number") 
+print("End of Program")
