@@ -9,3 +9,4 @@ while True:
         print("Your Number Is Too Low")
     else:
         print("You Made The Right Guess")
+    print("End of Program")
